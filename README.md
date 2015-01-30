@@ -46,8 +46,7 @@ Fetch submodules:
 * <leader> key is set to "," for more convenience
 
 **Key mapping**
-
-c> is still usable)
+* to exit insert mode you can type "jk" (<esc> is still usable)
 * just for fun I tried to map a combination of keys : type <leader>" to wrap current word with double quotes :-)
 
 

@@ -24,7 +24,20 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "Default colorscheme, can be overloaded with :colorscheme {colorschemeName}
 colorscheme lightcolors
 
+"definition of the leader key
+:let mapleader = ","
+
+"enable mouse clic
 set mouse=a
+
 syntax on
 filetype plugin indent on
 set number
+
+"remap esc key (esc is boring to reach)
+:inoremap jk <esc>
+"disable old esc key
+":inoremap <esc> <nop>
+
+"surround current word with double quotes
+:nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel

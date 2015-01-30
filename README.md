@@ -66,6 +66,4 @@ Full list of colors [here](https://github.com/flazz/vim-colorschemes/tree/master
 
     :colorscheme lightcolors 
     
-to exit insert mode you can type 
-    
-    `<leader>"`
+to exit insert mode you can type `<leader>"`

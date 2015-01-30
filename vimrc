@@ -24,6 +24,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "Default colorscheme, can be overloaded with :colorscheme {colorschemeName}
 colorscheme lightcolors
 
+set mouse=a
 syntax on
 filetype plugin indent on
 set number

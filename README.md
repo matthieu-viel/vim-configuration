@@ -1,6 +1,6 @@
 ##Ready-to-use vim configuration for PHP development
 
-This is my personal vim configuration as a php IDE. Almost ready to use, just clone the repository into your .vim folder and create a symlink to replace .vimrc
+This is my personal vim configuration as a php IDE. Almost ready to use, just clone the repository into your .vim folder and create a symlink to replace .vimrc.
 
 This will install following modules as submodules:
 

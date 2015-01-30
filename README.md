@@ -20,7 +20,7 @@ To try this configuration, first save your current configuration
     mv ~/.vim ~/.vim.bak
     mv ~/.vimrc ~/.vimrc.bak
 
-Basic install 
+Basic install
 
     mkdir ~/.vim
     cd ~/.vim
@@ -43,11 +43,11 @@ Fetch submodules:
 
 * NERDTree is autoloaded and if the focus is on an edited file typing :q will close all windows
 
-* <leader> key is set to "," for more convenience
+* `<leader>` key is set to "," for more convenience
 
 **Key mapping**
-* to exit insert mode you can type "jk" (<esc> is still usable)
-* just for fun I tried to map a combination of keys : type <leader>" to wrap current word with double quotes :-)
+* to exit insert mode you can type "jk" (`<esc>` is still usable)
+* just for fun I tried to map a combination of keys : type `<leader>"` to wrap current word with double quotes :-)
 
 
 **Colorscheme**
@@ -56,7 +56,7 @@ You can try color schemes by typing in normal mode
 
     :colorscheme <scheme name>
 
-or permanently define it in vimrc 
+or permanently define it in vimrc
 
     colorscheme <scheme name>
 
@@ -64,4 +64,4 @@ Full list of colors [here](https://github.com/flazz/vim-colorschemes/tree/master
 
 *Example* : to load **lightcolors.vim** simply type
 
-    :colorscheme lightcolors to exit insert mode you can type "
+    `:colorscheme lightcolors` to exit insert mode you can type `<leader>"`

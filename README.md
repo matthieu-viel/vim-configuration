@@ -65,5 +65,3 @@ Full list of colors [here](https://github.com/flazz/vim-colorschemes/tree/master
 *Example* : to load **lightcolors.vim** simply type
 
     :colorscheme lightcolors 
-    
-to exit insert mode you can type `<leader>"`

@@ -53,3 +53,4 @@ map <C-a> ggVG
 :nnoremap <leader>z d/</<cr>i<?php echo $lang['']; ?><esc>hhhhh"+gP
 :nnoremap <leader>s i<?php echo sprintf($lang[''],); ?><esc>hhhhhhh"+gPlll
 :nnoremap <leader>n i" . $lang[''] . "<esc>hhhhh"+gP
+:nnoremap <leader>b i$lang['']<esc>h"+gP

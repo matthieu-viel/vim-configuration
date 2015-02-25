@@ -41,12 +41,12 @@ Fetch submodules:
 
 * mouse click is enabled by default, you can click to expand folder tree in the left panel or double click on a file for edition
 
-* NERDTree is autoloaded and if the focus is on an edited file typing :q will close all windows
+* NERDTree is autoloaded and if the focus is on an edited file typing `:q` will close all windows
 
 * `<leader>` key is set to "," for more convenience
 
 **Key mapping**
-* to exit insert mode you can type "jk" (`<esc>` is still usable)
+* to exit insert mode you can type `jk` (`<esc>` is still usable)
 * just for fun I tried to map a combination of keys : type `<leader>"` to wrap current word with double quotes :-)
 
 
@@ -64,4 +64,4 @@ Full list of colors [here](https://github.com/flazz/vim-colorschemes/tree/master
 
 *Example* : to load **lightcolors.vim** simply type
 
-    `:colorscheme lightcolors` to exit insert mode you can type `<leader>"`
+    :colorscheme lightcolors 

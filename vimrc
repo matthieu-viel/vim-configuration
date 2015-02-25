@@ -22,7 +22,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " Standard vim configuration "
 """"""""""""""""""""""""""""""
 "Default colorscheme, can be overloaded with :colorscheme {colorschemeName}
-colorscheme lightcolors
+colorscheme desert
 
 "definition of the leader key
 :let mapleader = ","
@@ -34,6 +34,14 @@ syntax on
 filetype plugin indent on
 set number
 
+"set tabstop=3
+"set hlsearch
+
+map <C-x> "+x
+map <C-c> "+y
+map <C-v> "+gP
+map <C-a> ggVG
+
 "remap esc key (esc is boring to reach)
 :inoremap jk <esc>
 "disable old esc key
@@ -41,3 +49,7 @@ set number
 
 "surround current word with double quotes
 :nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+:nnoremap <leader>a i<?php echo $lang['']; ?><esc>hhhhh"+gP
+:nnoremap <leader>z d/</<cr>i<?php echo $lang['']; ?><esc>hhhhh"+gP
+:nnoremap <leader>s i<?php echo sprintf($lang[''],); ?><esc>hhhhhhh"+gPlll
+:nnoremap <leader>n i" . $lang[''] . "<esc>hhhhh"+gP

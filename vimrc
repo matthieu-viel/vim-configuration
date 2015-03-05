@@ -21,6 +21,16 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 """"""""""""""""""""""""""""""
 " Standard vim configuration "
 """"""""""""""""""""""""""""""
+
+:set hlsearch
+
+" Use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
+
+" Press Space to turn off highlighting and clear any message already displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 "Default colorscheme, can be overloaded with :colorscheme {colorschemeName}
 colorscheme desert
 
@@ -35,7 +45,6 @@ filetype plugin indent on
 set number
 
 "set tabstop=3
-"set hlsearch
 
 map <C-x> "+x
 map <C-c> "+y

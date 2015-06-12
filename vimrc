@@ -9,7 +9,7 @@ call pathogen#helptags()
 " NERDTree configuration "
 """"""""""""""""""""""""""
 "Open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 "Start NERDTree when vim starts even if no file were specified
 autocmd StdinReadPre * let s:std_in=1
@@ -21,6 +21,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 """"""""""""""""""""""""""""""
 " Standard vim configuration "
 """"""""""""""""""""""""""""""
+
+cd /home/matthieu/dev/
 
 :set hlsearch
 
@@ -63,3 +65,7 @@ map <C-a> ggVG
 :nnoremap <leader>s i<?php echo sprintf($lang[''],); ?><esc>hhhhhhh"+gPlll
 :nnoremap <leader>n i" . $lang[''] . "<esc>hhhhh"+gP
 :nnoremap <leader>b i$lang['']<esc>h"+gP
+
+"ctags
+"map <C-_> to open tag in new tab
+map <C-_> :tab tag <C-R>=expand("<cword>")<CR><CR>

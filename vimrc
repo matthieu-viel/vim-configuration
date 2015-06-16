@@ -46,7 +46,11 @@ syntax on
 filetype plugin indent on
 set number
 
-"set tabstop=3
+"replace tab by 3 spaces
+set expandtab
+set shiftwidth=3
+set softtabstop=3
+set tabstop=3
 
 map <C-x> "+x
 map <C-c> "+y
@@ -60,12 +64,8 @@ map <C-a> ggVG
 
 "surround current word with double quotes
 :nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-:nnoremap <leader>a i<?php echo $lang['']; ?><esc>hhhhh"+gP
-:nnoremap <leader>z d/</<cr>i<?php echo $lang['']; ?><esc>hhhhh"+gP
-:nnoremap <leader>s i<?php echo sprintf($lang[''],); ?><esc>hhhhhhh"+gPlll
-:nnoremap <leader>n i" . $lang[''] . "<esc>hhhhh"+gP
-:nnoremap <leader>b i$lang['']<esc>h"+gP
 
 "ctags
+"set tags+=/path/to/.ctags
 "map <C-_> to open tag in new tab
 map <C-_> :tab tag <C-R>=expand("<cword>")<CR><CR>
